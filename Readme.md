@@ -2,7 +2,7 @@
 
 Literally a simple login webpage.....
 
-Inspired by the login UI of [https://dribbble.com/haqqiilmiawan]
+Inspired by the login UI of [https://dribbble.com/haqqiilmiawan]\n
 Built for educational purposes only.
 
 <img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/cce6a0ee-8059-4539-909b-eaf2ce8c3e7e" />
