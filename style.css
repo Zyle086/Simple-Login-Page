@@ -30,8 +30,8 @@ h3 {
 }
 
 img {
-    max-width: 200%;
-    max-height: 200%;
+    max-width: 1000px;
+    max-height: 1000px;
     object-fit: fill;
 
 }
@@ -94,7 +94,7 @@ a {
     padding: none;
     overflow: hidden;
     max-width: 40vw;
-    max-height: 80vh;
+    height: 80vh;
     border-radius: 40px;
     margin-right: 2rem;
 }
@@ -150,4 +150,10 @@ a {
     flex: 1;
     height: 1px;
     background: #ccc;
+}
+
+
+/*1013×864*/
+@media (max-width: 1024) {
+    
 }
