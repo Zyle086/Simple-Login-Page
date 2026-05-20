@@ -9,15 +9,21 @@
 </head>
 <body>
      
-    <div id="parent-container">
+    <div class="parent-container container">
         <div class="container main-container">
-            <h1>Welcome Back!</h1>
-            <h3>Want to continue where you left off ?</h3>
-            <input type="text" placeholder="Username">
-            <input type="text" placeholder="Password">
-            <h3><a href="#">Forgot Password</a></h3>
+            <div class="intro-text-container container">
+                <h1>Welcome Back!</h1>
+                <h3>Want to continue where you left off ?</h3>
+            </div>
+            <div class="input-container container">
+                <input type="text" placeholder="Username">
+                <input type="text" placeholder="Password">
+            </div>
+            <h3 id= "forgot-pass"><a href="#">Forgot Password</a></h3>
             <Button id="login-btn">Login</Button>
-            <h3><span>or continue with</span></h3>
+            <div class="divider">
+                <span><h3>or continue with</h3></span>
+            </div>
             
             <ui id="icons">
                 <li class="icon google"><a href="#"><i class="fa-brands fa-google"></i></a></li>
@@ -25,14 +31,14 @@
                 <li class="icon facebook"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
             </ui>
 
+            <h3 style="padding-top: 2rem;">New here? <a href="#">Create an account</a></h3>
         </div>
 
-        <div class="container">
-            <img src="assets/LoginImg.jpg" alt="gren">
+        <div class="img-container container">
+            <img id= "Login-img" src="assets/LoginImg.jpg" alt="gren">
         </div>
     </div>
     
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
