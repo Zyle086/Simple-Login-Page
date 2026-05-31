@@ -10,7 +10,7 @@
 <body>
      
     <div class="parent-container container">
-        <div class="container login-container">
+        <div class="container login-container" >
             <div class="intro-text-container container">
                 <h1>Welcome Back!</h1>
                 <h3>Want to continue where you left off ?</h3>
@@ -20,23 +20,43 @@
                 <input type="text" placeholder="Password">
             </div>
             <h3 id= "forgot-pass"><a href="#">Forgot Password</a></h3>
-            <Button id="login-btn">Login</Button>
+            <button id="login-btn" type="button">Login</button>
             <div class="divider">
                 <span><h3>or continue with</h3></span>
             </div>
             
-            <ui id="icons">
+            <ul id="icons">
                 <li class="icon google"><a href="#"><i class="fa-brands fa-google"></i></a></li>
                 <li class="icon apple"><a href="#"><i class="fa-brands fa-apple"></i></a></li>
                 <li class="icon facebook"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-            </ui>
+            </ul>
 
-            <h3 style="padding-top: 2rem;">New here? <a href="#">Create an account</a></h3>
+            <h3 class="footer">New here? <a href="#">Create an account</a></h3>
+        </div>
+
+        <div class="container signup-container form-container"> 
+     
+            <div class="intro-text-container container">
+                <h1>Welcome Aboard!</h1>
+                <h3>Let's get you all set up.</h3>
+            </div>
+            <div class="input-name-container container">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Confirm Password">
+            <button class="brand-signup-btn"><img src="assets/svg/icons-google.svg" alt="">Continue with Google</button>
+            <button class="brand-signup-btn"><img src="assets/svg/icons-apple.svg" alt="">Continue with Apple</button>
+            <button class="brand-signup-btn"><img src="assets/svg/icons-facebook.svg" alt="">Continue with Facebook</button>
+            <h3 class="footer" >Already have an account? <a href="#">Log in</a></h3>
         </div>
 
         <div class="img-container container">
             <img id= "Login-img" src="assets/LoginImg.jpg" alt="gren">
         </div>
+
     </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
