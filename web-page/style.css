@@ -211,6 +211,7 @@ h3 {
 .signup-container {
     /* display: none; */
     right: 0;
+    padding-right: 2.5rem;
     gap: 1.25rem;
 }
 
