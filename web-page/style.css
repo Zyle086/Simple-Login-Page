@@ -120,10 +120,11 @@ h3 {
 .form-container button {
     font-family: 'poppins', sans-serif;
     min-width: 80%;
-    background-color: black;
+    background-color: rgb(22, 107, 37);
     border-radius: 20px;
     padding: 1rem 0;
     color: white;
+    border: solid 2px black;
 
     animation: 0.3s dropDown ease-in 0.3s;
     animation-fill-mode: forwards;
@@ -216,6 +217,11 @@ h3 {
     gap: 1.25rem;
 }
 
+.signup-container #register-btn {
+    animation: 0.3s dropDown ease-in 0.2s;
+    animation-fill-mode: forwards;
+}
+
 .signup-container .name-input-container{
     display: flex;
     justify-content: space-between;
@@ -226,18 +232,17 @@ h3 {
     width: 48%;
 }
 
-.signup-container .brand-signup-btn img {
+.signup-container #brand-signup-btn img {
     width: 5%;
 }
 
-.signup-container .brand-signup-btn {
+.signup-container #brand-signup-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
     background-color: rgb(212, 211, 211);
     color: black;
-    border: solid 2px black;
     padding: 0.6em;    
 }
 
@@ -332,4 +337,18 @@ h3 {
     to {
         transform: translateX(-300%);
     }
+}
+
+
+/* Button Hovers */
+#login-btn:hover,
+#register-btn:hover{
+    background-color: rgb(53, 157, 63);
+
+}   
+
+
+#brand-signup-btn:hover{
+    color: white;
+    background-color: rgb(163, 163, 163);
 }
