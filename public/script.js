@@ -1,4 +1,3 @@
-const DELAY = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 // Signup Form
 $("#to-signup").on("click", function(e){

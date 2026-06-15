@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-    <link rel="stylesheet" href="web-page/style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Login Page</title>
 </head>
 <body>
@@ -15,13 +15,13 @@
                 <h1>Welcome Back!</h1>
                 <h3>Want to continue where you left off ?</h3>
             </div>
-            <form class="input-container" action="/login" method="POST">
+            
+            <form class= "input-container" action="/login" method="POST">
                 <input type="text" placeholder="Username or Email">
                 <input type="password" placeholder="Password">
-                <h3 id= "forgot-pass"><a href="#" style="">Forgot Password</a></h3>
+                <h3 id= "forgot-pass"><a href="https://i.pinimg.com/736x/cc/14/d7/cc14d7c6d4576a0dda7d3e6b2ce6ed54.jpg">Forgot Password</a></h3>
                 <button type="submit" id="login-btn" type="button">Login</button>
             </form>
-            
             <div class="divider">
                 <span><h3>or continue with</h3></span>
             </div>
@@ -36,18 +36,19 @@
         </div>
 
         <div class="signup-container form-container hidden"> 
+
+            
             <div class="header">
                 <h1>Welcome Aboard!</h1>
                 <h3>Let's get you all set up.</h3>
             </div>
-
-            <form class = "input-container" action="/register" method="POST">
+            <form class="input-container" action="/register" method="POST" >
                 <input type="text" placeholder="Username or Email">
                 <input type="password" placeholder="Password">
                 <input type="password" placeholder="Confirm Password">
-                <button type= "submit" id ="register-btn" type="button">Register</button>
+                <button type="submit" id="register-btn" type="button">Register</button>
             </form>
-            
+           
             <button id="brand-signup-btn"><img class="brand-svg" src="assets/svg/icons-google.svg" alt="">Continue with Google</button>
             <button id="brand-signup-btn"><img class="brand-svg" src="assets/svg/icons-apple.svg" alt="">Continue with Apple</button>
             <button id="brand-signup-btn"><img class="brand-svg" src="assets/svg/icons-facebook.svg" alt="">Continue with Facebook</button>
@@ -61,7 +62,7 @@
     </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="web-page/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
