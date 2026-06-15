@@ -110,7 +110,7 @@ h3 {
 
 #forgot-pass {
     align-self: flex-end;
-    padding-right: 3rem;
+    padding-right: 0.2rem;
 
     animation: 0.3s dropDown ease-in 0.3s;
     animation-fill-mode: forwards;
