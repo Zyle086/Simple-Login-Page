@@ -15,13 +15,13 @@
                 <h1>Welcome Back!</h1>
                 <h3>Want to continue where you left off ?</h3>
             </div>
-            
-            <div class="input-container">
+            <form class="input-container" action="/login" method="POST">
                 <input type="text" placeholder="Username or Email">
                 <input type="password" placeholder="Password">
-            </div>
-            <h3 id= "forgot-pass"><a href="#" style="">Forgot Password</a></h3>
-            <button id="login-btn" type="button">Login</button>
+                <h3 id= "forgot-pass"><a href="#" style="">Forgot Password</a></h3>
+                <button type="submit" id="login-btn" type="button">Login</button>
+            </form>
+            
             <div class="divider">
                 <span><h3>or continue with</h3></span>
             </div>
@@ -40,12 +40,14 @@
                 <h1>Welcome Aboard!</h1>
                 <h3>Let's get you all set up.</h3>
             </div>
-            <div class="input-container">
+
+            <form class = "input-container" action="/register" method="POST">
                 <input type="text" placeholder="Username or Email">
                 <input type="password" placeholder="Password">
                 <input type="password" placeholder="Confirm Password">
-            </div>
-            <button id="register-btn" type="button">Register</button>
+                <button type= "submit" id ="register-btn" type="button">Register</button>
+            </form>
+            
             <button id="brand-signup-btn"><img class="brand-svg" src="assets/svg/icons-google.svg" alt="">Continue with Google</button>
             <button id="brand-signup-btn"><img class="brand-svg" src="assets/svg/icons-apple.svg" alt="">Continue with Apple</button>
             <button id="brand-signup-btn"><img class="brand-svg" src="assets/svg/icons-facebook.svg" alt="">Continue with Facebook</button>
