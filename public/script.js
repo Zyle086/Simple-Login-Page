@@ -1,5 +1,5 @@
 
-// Signup Form
+// Signup Form Animation
 $("#to-signup").on("click", function(e){
     $(".img-container").removeClass("right");
     $(".img-container").addClass("left");
@@ -12,7 +12,7 @@ $("#to-signup").on("click", function(e){
 }); 
 
 
-// Login Form
+// Login Form Animation
 $("#to-login").on("click", function(e){
     $(".img-container").removeClass("left");
     $(".img-container").addClass("right");
@@ -23,3 +23,7 @@ $("#to-login").on("click", function(e){
         $(".signup-container").removeClass("disappearRight");
     }, 500);
 }); 
+
+
+// ACTUAL CODE
+
