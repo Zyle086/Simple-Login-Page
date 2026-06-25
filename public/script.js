@@ -38,7 +38,7 @@ $("#login-btn").on("click", async function() {
         })
 
     });
-    alert(`Username: ${$("#login-username").val()}\nPassword: ${$("#login-password").val()}\n\nRESPONSE: ${res}`);
+    alert(`Username: ${$("#login-username").val()}\nPassword: ${$("#login-password").val()}`);
 });
 
 
@@ -54,5 +54,5 @@ $("#register-btn").on("click", async function() {
         })
 
     });
-    alert(`Username: ${$("#register-username").val()}\nPassword: ${$("#register-password").val()}\nConfirm Pass: ${$("#confirm-pass").val()}\n\nRESPONSE: ${res}`);
+    alert(`Username: ${$("#register-username").val()}\nPassword: ${$("#register-password").val()}\nConfirm Pass: ${$("#confirm-pass").val()}`);
 });
