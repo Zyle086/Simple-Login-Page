@@ -16,11 +16,11 @@
                 <h3>Want to continue where you left off ?</h3>
             </div>
             
-            <form class= "input-container" action="/login" method="POST">
-                <input type="text" placeholder="Username or Email">
-                <input type="password" placeholder="Password">
+            <form class= "input-container" id="login-form">
+                <input type="text" placeholder="Username or Email" id="login-username">
+                <input type="password" placeholder="Password" id="login-password">
                 <h3 id= "forgot-pass"><a href="https://i.pinimg.com/736x/cc/14/d7/cc14d7c6d4576a0dda7d3e6b2ce6ed54.jpg">Forgot Password</a></h3>
-                <button type="submit" id="login-btn" type="button">Login</button>
+                <button type="submit" id="login-btn">Login</button>
             </form>
             <div class="divider">
                 <span><h3>or continue with</h3></span>
@@ -42,11 +42,11 @@
                 <h1>Welcome Aboard!</h1>
                 <h3>Let's get you all set up.</h3>
             </div>
-            <form class="input-container" action="/register" method="POST" >
-                <input type="text" placeholder="Username or Email">
-                <input type="password" placeholder="Password">
-                <input type="password" placeholder="Confirm Password">
-                <button type="submit" id="register-btn" type="button">Register</button>
+            <form class="input-container" id="register-form">
+                <input type="text" placeholder="Username or Email" id="register-username">
+                <input type="password" placeholder="Password" id="register-password">
+                <input type="password" placeholder="Confirm Password" id="confirm-pass">
+                <button type="submit" id="register-btn">Register</button>
             </form>
            
             <button id="brand-signup-btn"><img class="brand-svg" src="assets/svg/icons-google.svg" alt="">Continue with Google</button>

@@ -23,6 +23,12 @@ app.get("/", (req, res) => {
 
 app.post("/login", (req, res) => {
 
-    // TODO: ADD RESPONSE TO A LOGIN REQUESTs
+    // TODO: ADD RESPONSE TO A LOGIN REQUESTS
     res.sendStatus(200);
 });
+
+app.post("/register", (req, res) => {
+
+    // TODO: ADD RESPONSE TO SIGNUP REQUESTS
+    res.sendStatus(200);
+})
