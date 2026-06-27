@@ -3,66 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Login Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
-    <title>Login Page</title>
 </head>
 <body>
-     
+    
     <div class="parent-container">
-        <div class="form-container login-container" >
-            <div class="header">
-                <h1>Welcome Back!</h1>
-                <h3>Want to continue where you left off ?</h3>
+        
+        <div class="login-form form-container">
+            <div class="top">
+                <div class="header">
+                    <h1>Welcome Back!</h1>
+                    <h3>Want to continue where you left off ?</h3>
+                </div>
+                <div class="input-container">
+                    <input type="text" placeholder="Username or Email">
+                    <div class="password-container">
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="form-options">
+                        <div class="remember-container">
+                            <input type="checkbox">
+                            <h4>Remember Me</h4>
+                        </div>
+                            <h4><a href="#">Forgot Password</a></h4>
+                        </div>
+                        <button id="login-btn">Login</button>
+                </div>
+                <div class="divider">
+                    <span><h3>or continue with</h3></span>
+                </div>
+                <div class="icons-container">
+                    <ul id="icons">
+                        <li class="icon google"><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                        <li class="icon apple"><a href="#"><i class="fa-brands fa-apple"></i></a></li>
+                        <li class="icon facebook"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    </ul>
+                </div>
             </div>
+            <div class="bottom"><h4>New Here? <a id="to-register">Create An Account</a></h4></div>
             
-            <form class= "input-container" id="login-form">
-                <input type="text" placeholder="Username or Email" id="login-username">
-                <input type="password" placeholder="Password" id="login-password">
-                <h3 id= "forgot-pass"><a href="https://i.pinimg.com/736x/cc/14/d7/cc14d7c6d4576a0dda7d3e6b2ce6ed54.jpg">Forgot Password</a></h3>
-                <button type="submit" id="login-btn">Login</button>
-            </form>
-            <div class="divider">
-                <span><h3>or continue with</h3></span>
-            </div>
-            
-            <ul id="icons">
-                <li class="icon google"><a href="#"><i class="fa-brands fa-google"></i></a></li>
-                <li class="icon apple"><a href="#"><i class="fa-brands fa-apple"></i></a></li>
-                <li class="icon facebook"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-            </ul>
-
-            <h3 class="footer">New here? <a id="to-signup">Create an account</a></h3>
         </div>
 
-        <div class="signup-container form-container hidden"> 
- 
-            
-            <div class="header">
-                <h1>Welcome Aboard!</h1>
-                <h3>Let's get you all set up.</h3>
+        <div class="register-form form-container hidden">
+            <div class="top">
+                <div class="header">
+                    <h1>Welcome Aboard!</h1>
+                    <h3>Let's get you all set up.</h3>
+                </div>
+                <div class="input-container">
+                    <input type="text" placeholder="Username or Email" id="register-username">
+                    <div class="password-container">
+                        <input type="password" placeholder="Password" id="register-password">
+                    </div>
+                    <div class="password-container">
+                        <input type="password" placeholder="Confirm Password" id="confirm-pass">
+                    </div>
+                    
+                    <button id="register-btn">Register</button>
+                    <button id="brand-signup-btn"><img class="brand-svg" src="assets/svg/icons-google.svg" alt="">Continue with Google</button>
+                    <button id="brand-signup-btn"><img class="brand-svg" src="assets/svg/icons-apple.svg" alt="">Continue with Apple</button>
+                    <button id="brand-signup-btn"><img class="brand-svg" src="assets/svg/icons-facebook.svg" alt="">Continue with Facebook</button>
+                   
+                </div>
             </div>
-            <form class="input-container" id="register-form">
-                <input type="text" placeholder="Username or Email" id="register-username">
-                <input type="password" placeholder="Password" id="register-password">
-                <input type="password" placeholder="Confirm Password" id="confirm-pass">
-                <button type="submit" id="register-btn">Register</button>
-            </form>
-           
-            <button id="brand-signup-btn"><img class="brand-svg" src="assets/svg/icons-google.svg" alt="">Continue with Google</button>
-            <button id="brand-signup-btn"><img class="brand-svg" src="assets/svg/icons-apple.svg" alt="">Continue with Apple</button>
-            <button id="brand-signup-btn"><img class="brand-svg" src="assets/svg/icons-facebook.svg" alt="">Continue with Facebook</button>
-            <h3 class= "footer" style="padding-top: 0.6rem;">Already have an account? <a id="to-login">Log in</a></h3>
+            <div class="bottom"> 
+                <h4>Already have an account? <a id="to-login">Log in</a></h4>
+            </div>
         </div>
 
         <div class="img-container right">
-            <img id="slider-img" src="assets/LoginImg.jpg" alt="gren">
+            <img src="assets/LoginImg.jpg" alt="">
         </div>
+        
 
     </div>
-    
+
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-

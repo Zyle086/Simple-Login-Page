@@ -1,58 +1,26 @@
 
-// Signup Form Animation
-$("#to-signup").on("click", function(e){
+$("#to-register").on("click", function(){
     $(".img-container").removeClass("right");
     $(".img-container").addClass("left");
-    $(".login-container").addClass("disappearLeft");
-    $(".signup-container").removeClass("hidden");
+    $(".register-form").removeClass("hidden");
+    $(".login-form").addClass("disappearLeft");
     setTimeout(() => {
-        $(".login-container").addClass("hidden");
-        $(".login-container").removeClass("disappearLeft");
+        $(".login-form").addClass("hidden");
+        $(".login-form").removeClass("disappearLeft");
     }, 500);
-}); 
-
-
-// Login Form Animation
-$("#to-login").on("click", function(e){
-    $(".img-container").removeClass("left");
-    $(".img-container").addClass("right");
-    $(".signup-container").addClass("disappearRight");
-    $(".login-container").removeClass("hidden");
-    setTimeout(() => {
-        $(".signup-container").addClass("hidden");
-        $(".signup-container").removeClass("disappearRight");
-    }, 500);
-}); 
-
-
-// ACTUAL CODE
-
-$("#login-btn").on("click", async function() {
-    const res = await $.ajax({
-        url: "/login",
-        method: "POST",
-        contentType: "application/json",
-        data: JSON.stringify({
-            username: $("#login-username").val(),
-            password: $("#login-password").val()
-        })
-
-    });
-    alert(`Username: ${$("#login-username").val()}\nPassword: ${$("#login-password").val()}`);
 });
 
 
-$("#register-btn").on("click", async function() {
-    const res = await $.ajax({
-        url: "/register",
-        method: "POST",
-        contentType: "application/json",
-        data: JSON.stringify({
-            username: $("#register-username").val(),
-            password: $("#register-password").val(),
-            confirm: $("#confirm-pass").val()
-        })
 
-    });
-    alert(`Username: ${$("#register-username").val()}\nPassword: ${$("#register-password").val()}\nConfirm Pass: ${$("#confirm-pass").val()}`);
+$("#to-login").on("click", function(){
+    $(".img-container").removeClass("left");
+    $(".img-container").addClass("right");
+    $(".login-form").removeClass("hidden");
+    $(".register-form").addClass("disappearRight");
+    setTimeout(() => { 
+        $(".register-form").addClass("hidden");
+        $(".register-form").removeClass("disappearRight");
+        
+    }, 500);
+
 });
