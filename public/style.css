@@ -66,7 +66,7 @@ a {
     background-color: rgb(14, 68, 17);
     padding: 0.8rem 3rem;
     border: 2px solid black;
-    border-radius: 18px;
+    border-radius: 20px;
 
 }
 
@@ -151,9 +151,9 @@ a {
 
 .input-container input[type="text"],
 .input-container input[type="password"] {
-    padding: 0.65rem 1rem;
+    padding: 0.7rem 1rem;
     border: 1.75px solid black;
-    border-radius: 8px;
+    border-radius: 20px;
 }
 
 .input-container input[type="checkbox"]:checked{
