@@ -50,6 +50,14 @@ a {
     color: black;
 }
 
+.password-container img{
+    top: 30%;
+    right: 5%;
+    position: absolute;
+    width: 1rem;
+
+}
+
 
 #login-btn,
 #register-btn {
@@ -83,10 +91,9 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
+    
 
-    opacity: 0;
-    animation: 0.6s dropDown ease-in-out 0.5s;
-    animation-fill-mode: forwards;
 }
 
 .login-form {
@@ -132,8 +139,10 @@ a {
     justify-content: center;
 }
 
+
 .input-container,
 .password-container{
+    position: relative;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -145,6 +154,10 @@ a {
     padding: 0.65rem 1rem;
     border: 1.75px solid black;
     border-radius: 8px;
+}
+
+.input-container input[type="checkbox"]:checked{
+    accent-color: green;
 }
 
 .password-container {
@@ -171,11 +184,11 @@ a {
     border-radius: 50%;
 }
 
-.register-form #brand-signup-btn img {
+.register-form #brand-register-btn img {
     width: 20px;
 }
 
-.register-form #brand-signup-btn {
+.register-form #brand-register-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,21 +280,32 @@ a {
 
 /* Animation */
 
-.top {
-    animation-delay: 1s;
+.step1 {
+    opacity: 0;
+    animation: 0.4s dropDown ease-in-out 0.2s;
+    animation-fill-mode: forwards;
 }
 
-.bottom {
-    animation-delay: 1s;
+.step2 {
+    opacity: 0;
+    animation: 0.4s dropDown ease-in-out 0.5s;
+    animation-fill-mode: forwards;
 }
 
-.input-container {
-    animation-delay: 0.8s;
+
+.step3 {
+    opacity: 0;
+    animation: 0.4s dropDown ease-in-out 0.8s;
+    animation-fill-mode: forwards;
 }
 
-.header {
-    animation-delay: 0.6s;
+.step4 {
+    opacity: 0;
+    animation: 0.4s popUp ease-in-out 0.8s;
+    animation-fill-mode: forwards;
 }
+
+
 
 
 @keyframes imageSlideLeft{
@@ -326,7 +350,7 @@ a {
 @keyframes dropDown{
     from  {
         opacity: 0;
-        transform: translateY(-100%);
+        transform: translateY(-40%);
     }
     to {
         opacity: 1;
