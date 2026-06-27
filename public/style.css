@@ -258,13 +258,13 @@ a {
 }
 
 .img-container.left{
-    animation: 0.5s imageSlideLeft ease-in-out;
+    animation: 0.75s imageSlideLeft ease-in-out;
     animation-fill-mode: forwards;
 
 }
 
 .img-container.right{
-    animation: 0.5s imageSlideRight ease-in-out;
+    animation: 0.75s imageSlideRight ease-in-out;
     animation-fill-mode: forwards;
 }
 
@@ -301,7 +301,7 @@ a {
 
 .step4 {
     opacity: 0;
-    animation: 0.4s popUp ease-in-out 0.8s;
+    animation: 0.9s popUp ease-in-out 0.8s;
     animation-fill-mode: forwards;
 }
 
