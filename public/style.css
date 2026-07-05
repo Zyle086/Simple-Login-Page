@@ -64,7 +64,7 @@ a {
     width: 100%;
     color: white;
     background-color: rgb(14, 68, 17);
-    padding: 0.8rem 3rem;
+    padding: 0.67rem 3rem;
     border: 2px solid black;
     border-radius: 20px;
 
@@ -151,7 +151,7 @@ a {
 
 .input-container input[type="text"],
 .input-container input[type="password"] {
-    padding: 0.7rem 1rem;
+    padding: 0.67rem 1rem;
     border: 1.75px solid black;
     border-radius: 20px;
 }
@@ -184,11 +184,11 @@ a {
     border-radius: 50%;
 }
 
-.register-form #brand-register-btn img {
+#brand-register-btn img {
     width: 20px;
 }
 
-.register-form #brand-register-btn {
+#brand-register-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -235,9 +235,9 @@ a {
 }   
 
 
-#brand-signup-btn:hover{
+#brand-register-btn:hover{
     color: white;
-    background-color: rgb(163, 163, 163);
+    background-color: rgb(152, 152, 152);
 }
 
 
@@ -400,4 +400,39 @@ a {
         opacity: 0;
         transform: translateX(500%);
     }
+}
+
+
+
+/* Media queries */
+
+@media (max-height: 700px) {
+
+    h1 {
+    font-size: 1.7rem;
+    }
+
+
+    #login-btn,
+    #register-btn {
+        padding: 0.4rem 2rem
+    }
+
+    .top {
+        gap: 0.5rem;
+    }
+
+    .login-form .top {
+        gap: 0.5rem;
+    }
+
+    .input-container {
+        padding: 0.5rem
+    }
+
+    .input-container,
+    .password-container {
+        gap: 0.86rem;
+    }
+
 }

@@ -9,8 +9,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const PORT = "8080";
 const app = express();
 
+app.use(bodyParser.urlencoded( {extended : true}));
 app.use(express.static("public"));
-
 app.listen(PORT, () => {
     console.log(`Connected to port ${PORT}.`);
 })
@@ -21,10 +21,11 @@ app.get("/", (req, res) => {
 }); 
 
 
-app.post("/login", (req, res) => {
-
+app.post("/login",  (req, res) => {  
+    
     // TODO: ADD RESPONSE TO A LOGIN REQUESTS
     res.sendStatus(200);
+
 });
 
 app.post("/register", (req, res) => {

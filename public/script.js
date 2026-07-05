@@ -26,18 +26,20 @@ $("#to-login").on("click", () => {
 });
 
 
-
 // ACTUAL CODE
 
 /**
  * TODO: 
  * * Manage Password Requirements (length, symbols, etc)
  * 
- * ! HANDLE ERRORS
- * * Username/ Email Not Found
- * * Incorrect Password
- * * Missing Required Fields
+ * ! HANDLE ERRORS ( HIGH PRIO )
+ * * Missing Required Fields ( Client Side / Frontend / ) 
+ * * Username/ Email Not Found (Client side /  Backend ) 
+ * * Incorrect Password (CLient Side / Backend )
+ * 
  */
+
+
 $(".password-container img").on("click", function(){
     let id = $(this).attr("id");
     toggleEye(id);
