@@ -10,14 +10,14 @@ const PORT = "8080";
 const app = express();
 
 app.use(bodyParser.urlencoded( {extended : true}));
-app.use(express.static("public"));
+app.use(express.static("root"));
 app.listen(PORT, () => {
     console.log(`Connected to port ${PORT}.`);
 })
 
 app.get("/", (req, res) => {
     // HANDLES THE GET INDEX.HTML FROM BROWSER AND SENDS THE FILE FROM THE PUBLIC DIRECTORY
-    res.sendFile(__dirname + "/public/index.html");
+    res.sendFile(__dirname + "/root/index.html");
 }); 
 
 
