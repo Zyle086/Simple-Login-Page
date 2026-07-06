@@ -1,4 +1,4 @@
-# [Simple-Login-Page](https://zyle086.github.io/Simple-Login-Page/public)
+# [Simple-Login-Page](https://zyle086.github.io/Simple-Login-Page/public/index.html)
 
 A simple and responsive login page that: 
   - Safely Stores user data
