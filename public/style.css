@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100dvh;
+    min-height: 100vh;
     background: radial-gradient(circle, black, rgb(55, 101, 55));
 }
 
@@ -75,7 +75,8 @@ a {
     position: relative;
     display: flex;
     width: clamp(300px, 80%, 1200px);
-    height: 85dvh;
+    height: 85vh;
+    min-height: 85dvh;
     background-color: white;
     border-radius: 20px;
     align-items: center;
@@ -244,7 +245,7 @@ a {
 /* Img Container & animations */
 .img-container img{
     width: 1250px;
-
+    height: 100%;
 }
 
 .img-container{
@@ -253,8 +254,6 @@ a {
     height: 100%;
     border-radius: 80px 20px 20px 80px;
     overflow: hidden;
-
-
 }
 
 .img-container.left{
@@ -406,33 +405,59 @@ a {
 
 /* Media queries */
 
-@media (max-height: 700px) {
-
-    h1 {
-    font-size: 1.7rem;
+@media (max-width: 1024px) {
+    .parent-container {
+        flex-direction: column;
+        width: min(95%, 1000px);
+        height: auto;
+        padding: 1.5rem 0;
     }
 
+    .form-container,
+    .img-container {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
 
-    #login-btn,
-    #register-btn {
-        padding: 0.4rem 2rem
+    .form-container {
+        min-height: auto;
+        padding: 0 1rem;
+    }
+
+    .img-container {
+        border-radius: 40px;
+        margin: 0 auto;
+        max-height: 450px;
+    }
+
+    .img-container img {
+        height: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    .parent-container {
+        width: 100%;
+        border-radius: 0;
     }
 
     .top {
-        gap: 0.5rem;
-    }
-
-    .login-form .top {
-        gap: 0.5rem;
-    }
-
-    .input-container {
-        padding: 0.5rem
+        width: 100%;
     }
 
     .input-container,
     .password-container {
-        gap: 0.86rem;
+        width: 100%;
     }
 
+    .divider,
+    .icons-container {
+        width: 100%;
+    }
+
+    .login-form,
+    .register-form {
+        width: 100%;
+    }
 }
